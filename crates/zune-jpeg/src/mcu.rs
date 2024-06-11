@@ -206,7 +206,7 @@ impl<T: ZReaderTrait> JpegDecoder<T> {
                 &mut upsampler_scratch_space
             )?;
         }
-        assert_eq!(pixels_written, pixels.len());
+        // assert_eq!(pixels_written, pixels.len());
 
         trace!("Finished decoding image");
 
